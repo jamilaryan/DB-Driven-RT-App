@@ -1,1 +1,1 @@
-#Real-time webapp buit with Reac-Redux powered with Google Firebase
+#Real-time webapp built with Reac-Redux, powered with Google Firebase
