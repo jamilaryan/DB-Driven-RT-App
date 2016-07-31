@@ -25,10 +25,19 @@ export var addTodo = (todo) => {
 export var startAddTodo = (text) => {
   return (dispatch, getState) => {
     var todo = {
-      text,
-      completed: false,
+      id: text[0],
+      lastname: text[1],
+      firstname: text[2],
+      address: text[3],
+      phone: text[4],
+      email: text[5],
+      plan: text[6],
+      description: text[7],
+      doc: text[8],
+      recording: text[9],
+      // completed: false,
       createdAt: moment().unix(),
-      completedAt: null
+      // completedAt: null
     };
     var todoRef = firebaseRef.child('todos').push(todo);
 
@@ -45,6 +54,9 @@ export var addTodos = (todos) => {
   return {
     type: 'ADD_TODOS',
     todos
+    // id: todos[0],
+    // name: todos[1],
+    // sirname: todos[2],
   };
 };
 

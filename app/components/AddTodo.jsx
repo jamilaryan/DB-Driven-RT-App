@@ -17,6 +17,7 @@ export var AddTodo = React.createClass({
     var todoText9 = this.refs.todoText9.value;
     var todoText10 = this.refs.todoText10.value;
 
+    var todoTextArray = [todoText,todoText2,todoText3,todoText4,todoText5, todoText6, todoText7, todoText8, todoText9,todoText10];
 
       this.refs.todoText.value = '';
       this.refs.todoText2.value = '';
@@ -28,16 +29,18 @@ export var AddTodo = React.createClass({
       this.refs.todoText8.value = '';
       this.refs.todoText9.value = '';
       this.refs.todoText10.value = '';
-      if (todoText.length > 0) { dispatch(actions.startAddTodo(todoText));}
-      if (todoText2.length > 0) { dispatch(actions.startAddTodo(todoText2));}
-      if (todoText3.length > 0) { dispatch(actions.startAddTodo(todoText3));}
-      if (todoText4.length > 0) { dispatch(actions.startAddTodo(todoText4));}
-      if (todoText5.length > 0) { dispatch(actions.startAddTodo(todoText5));}
-      if (todoText6.length > 0) { dispatch(actions.startAddTodo(todoText6));}
-      if (todoText7.length > 0) { dispatch(actions.startAddTodo(todoText7));}
-      if (todoText8.length > 0) { dispatch(actions.startAddTodo(todoText8));}
-      if (todoText9.length > 0) { dispatch(actions.startAddTodo(todoText9));}
-      if (todoText10.length > 0) { dispatch(actions.startAddTodo(todoText10));} 
+
+
+      if (todoText.length > 0) { dispatch(actions.startAddTodo(todoTextArray));}
+      // if (todoText2.length > 0) { dispatch(actions.startAddTodo(todoText2));}
+      // if (todoText3.length > 0) { dispatch(actions.startAddTodo(todoText3));}
+      // if (todoText4.length > 0) { dispatch(actions.startAddTodo(todoText4));}
+      // if (todoText5.length > 0) { dispatch(actions.startAddTodo(todoText5));}
+      // if (todoText6.length > 0) { dispatch(actions.startAddTodo(todoText6));}
+      // if (todoText7.length > 0) { dispatch(actions.startAddTodo(todoText7));}
+      // if (todoText8.length > 0) { dispatch(actions.startAddTodo(todoText8));}
+      // if (todoText9.length > 0) { dispatch(actions.startAddTodo(todoText9));}
+      // if (todoText10.length > 0) { dispatch(actions.startAddTodo(todoText10));}
     // if (todoText.length > 0) {
     //   this.refs.todoText.value = '';
     //   this.refs.todoText2.value = '';
