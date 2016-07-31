@@ -11,7 +11,7 @@ var TodoAPI = require('TodoAPI');
 store.subscribe(() => {
   var state = store.getState();
   console.log('New state', state);
-  TodoAPI.setTodos(state.todos);
+  // TodoAPI.setTodos(state.todos);
 });
 
 var initialTodos = TodoAPI.getTodos();

@@ -66,7 +66,7 @@ export var AddTodo = React.createClass({
           <input type="text" ref="todoText8" placeholder="Service Description"/>
           <input type="text" ref="todoText9" placeholder="Service/Invoice Document"/>
           <input type="text" ref="todoText10" placeholder="Voice Recording"/>
-          <button className="button expanded">Add Todo</button>
+          <button className="button expanded">Add</button>
         </form>
       </div>
     );
