@@ -22,6 +22,7 @@ export var addTodo = (todo) => {
   };
 };
 
+// localstorage disabled on TodoApi.jsx
 export var startAddTodo = (text) => {
   return (dispatch, getState) => {
     var todo = {
